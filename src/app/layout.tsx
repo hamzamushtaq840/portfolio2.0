@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bai_Jamjuree } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const bai = Bai_Jamjuree({
   subsets: ["latin-ext"],
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={bai.className}>{children}</body>
+      <Analytics />
     </html>
   );
 }

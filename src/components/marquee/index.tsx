@@ -15,7 +15,7 @@ const Marquee = () => {
   ];
 
   return (
-    <div className="py-20 overflow-hidden">
+    <div className="overflow-hidden py-20">
       <div className="stock-ticker bg-">
         <ul>
           {items.map((item, index) => (

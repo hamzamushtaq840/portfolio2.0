@@ -3,8 +3,8 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="pt-10 pb-5 px-32 flex justify-between items-center">
-      <div className="text-5xl leading-[64px] font-bold">
+    <div className="flex items-center justify-between px-32 pb-5 pt-10">
+      <div className="text-5xl font-bold leading-[64px]">
         <h1>HI, I’M HAMZA.</h1>
 
         <div className="flex flex-wrap items-center gap-3">
@@ -17,7 +17,7 @@ const Hero = () => {
           BASED IN <s>PAKISTAN</s>
         </h1>
 
-        <span className="flex gap-2 text-2xl my-10">
+        <span className="my-10 flex gap-2 text-2xl">
           <span>DESIGN</span>
           <Image src={"/break.svg"} alt="pfp" height={20} width={20} />
           <span>DEVELOPMENT</span>

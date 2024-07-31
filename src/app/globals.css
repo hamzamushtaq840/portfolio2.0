@@ -2,32 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.stock-ticker {
+  font-size: 15px;
+  padding-block: 8px;
+  user-select: none;
+  --gap: 70px;
+  display: flex;
+  rotate: -4deg;
+  border-block: 1px solid #e94d354f;
+  gap: var(--gap);
+  position: relative;
+  overflow: hidden;
+}
+
+.stock-ticker ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+  animation: scroll 20s linear infinite;
+}
+
+.stock-ticker:hover ul {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.stock-ticker li img {
+  filter: grayscale(100%);
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.stock-ticker li img:hover {
+  filter: grayscale(0%);
 }

@@ -3,8 +3,8 @@ import { Bai_Jamjuree } from "next/font/google";
 import "./globals.css";
 
 const bai = Bai_Jamjuree({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600"],
+  subsets: ["vietnamese"],
+  weight: ["200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {

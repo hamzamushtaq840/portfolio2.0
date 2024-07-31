@@ -4,14 +4,14 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="pt-10 pb-5 px-32 flex justify-between items-center">
-      <div className="text-5xl leading-[64px] font-bold text-[#ededed]">
+      <div className="text-5xl leading-[64px] font-bold">
         <h1>HI, I’M HAMZA.</h1>
 
-        <span className="flex items-center gap-3">
-          A FULL STACK{" "}
+        <div className="flex flex-wrap items-center gap-3">
+          <span>FULL STACK</span>
           <Image src={"/singlelogo.svg"} alt="pfp" height={40} width={40} />
-          DEVELOPER
-        </span>
+          <span>DEVELOPER</span>
+        </div>
 
         <h1>
           BASED IN <s>PAKISTAN</s>

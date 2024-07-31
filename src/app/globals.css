@@ -49,3 +49,8 @@ html {
 .stock-ticker li img:hover {
   filter: grayscale(0%);
 }
+
+.input-custom:focus {
+  border-color: #e94d35; /* Ensure the border color changes to orange on focus */
+  outline: none; /* Remove the default outline */
+}

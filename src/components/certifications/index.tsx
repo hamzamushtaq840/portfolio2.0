@@ -24,7 +24,18 @@ const Certifications = () => {
                   Runner Up - Webflow Expert Design
                 </span>
               </div>
-              <span className="text-lg font-semibold tracking-wide">2021</span>
+              <div className="flex gap-2">
+                <span className="text-lg font-semibold tracking-wide">
+                  2021
+                </span>
+                <Image
+                  alt={"side"}
+                  className="fill-white hover:cursor-pointer hover:fill-blue-500"
+                  src={"/link.svg"}
+                  width={20}
+                  height={20}
+                />
+              </div>
             </div>
           );
         })}

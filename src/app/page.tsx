@@ -1,4 +1,5 @@
 import Certifications from "@/components/certifications";
+import Contact from "@/components/contact";
 import Details from "@/components/details";
 import Experience from "@/components/experience";
 import Footer from "@/components/footer";
@@ -19,6 +20,7 @@ export default function Home() {
       <Certifications />
       <LatestProjects />
       <Experience />
+      <Contact />
       <Footer />
     </div>
   );

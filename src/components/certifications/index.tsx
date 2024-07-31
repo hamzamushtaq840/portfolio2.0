@@ -12,7 +12,10 @@ const Certifications = () => {
       <div className="flex w-full flex-col gap-6">
         {[1, 2, 3, 4].map((v, i) => {
           return (
-            <div className="flex items-center gap-6 border border-white px-8 py-9">
+            <div
+              key={i}
+              className="flex items-center gap-6 border border-white px-8 py-9"
+            >
               <div className="flex h-12 w-12 items-center justify-center bg-textOrange text-lg font-bold text-white">
                 {v}
               </div>

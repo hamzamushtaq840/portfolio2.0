@@ -17,6 +17,7 @@ const LatestProjects = () => {
         {[1, 2, 3, 4].map((v, i) => {
           return (
             <div
+              key={i}
               className={cn("flex gap-14", i % 2 == 0 && "flex-row-reverse")}
             >
               <Image

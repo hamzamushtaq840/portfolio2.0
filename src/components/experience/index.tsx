@@ -12,7 +12,10 @@ const Experience = () => {
       <div className="flex w-full flex-col gap-6">
         {[1, 2, 3, 4].map((v, i) => {
           return (
-            <div className="flex items-center gap-6 border border-white px-8 py-9">
+            <div
+              key={i}
+              className="flex items-center gap-6 border border-white px-8 py-9"
+            >
               <div className="flex flex-1 flex-col gap-2">
                 <span className="text font-bold text-textOrange">
                   NOV 2022 - DEC 2023

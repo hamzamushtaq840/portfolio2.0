@@ -15,7 +15,7 @@ const NavBar = () => {
         <li>Contact</li>
       </ul>
 
-      <button className="border border-white px-6 py-2">Let's Talk</button>
+      <button className="border border-white px-6 py-2">Let&apos;s Talk</button>
     </div>
   );
 };

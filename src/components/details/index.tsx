@@ -13,6 +13,7 @@ const Details = () => {
       {data.map((v, i) => {
         return (
           <div
+            key={i}
             className={cn(
               "flex flex-col items-center justify-center gap-5 border border-white py-6",
               i == 1 && "bg-white text-black",

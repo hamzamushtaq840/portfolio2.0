@@ -47,7 +47,7 @@ const Intro = () => {
         <div className="grid grid-cols-3">
           {data.map((v, i) => {
             return (
-              <div className="flex flex-col gap-2">
+              <div key={i} className="flex flex-col gap-2">
                 <span className="text-sm font-semibold tracking-wider text-textOrange">
                   {v.label}
                 </span>

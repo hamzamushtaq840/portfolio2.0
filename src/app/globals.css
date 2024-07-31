@@ -14,8 +14,7 @@
   user-select: none;
   --gap: 70px;
   display: flex;
-  rotate: -4deg;
-  border-block: 1px solid #e94d354f;
+  border-block: 1px solid #383838b9;
   gap: var(--gap);
   position: relative;
   overflow: hidden;

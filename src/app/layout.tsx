@@ -3,7 +3,7 @@ import { Bai_Jamjuree } from "next/font/google";
 import "./globals.css";
 
 const bai = Bai_Jamjuree({
-  subsets: ["vietnamese"],
+  subsets: ["latin-ext"],
   weight: ["200", "300", "400", "500", "600", "700"],
 });
 

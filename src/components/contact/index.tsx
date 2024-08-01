@@ -6,12 +6,12 @@ const Contact = () => {
       <span className="text-2xl font-bold leading-[32px]">
         Wanna hit up with something ?
       </span>
-      <form className="mt-10 flex flex-col gap-6 lg:mt-0 lg:flex-row lg:gap-4">
+      <form className="mt-10 flex w-full flex-col gap-6 lg:mt-0 lg:w-auto lg:flex-row lg:gap-4">
         <input
           required
           type="text"
           placeholder="YOUR MESSAGE"
-          className="input-custom w-[354px] border border-white bg-transparent px-6 py-4 font-medium outline-textOrange"
+          className="input-custom w-full border border-white bg-transparent px-6 py-4 font-medium outline-textOrange lg:w-[354px]"
         />
         <button
           className="bg-textOrange px-6 py-4 text-lg font-semibold"

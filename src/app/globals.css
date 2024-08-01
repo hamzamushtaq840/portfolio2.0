@@ -19,6 +19,7 @@ html {
   display: flex;
   border-block: 1px solid #383838b9;
   gap: var(--gap);
+  background-color: rgb(26, 24, 24);
   position: relative;
   overflow: hidden;
 }

@@ -8,7 +8,7 @@ const Marquee = () => {
     { src: "/javascript.svg", alt: "JavaScript", width: 50, height: 128 },
     { src: "/typescript.svg", alt: "TypeScript", width: 35, height: 80 },
     { src: "/docker.svg", alt: "Docker", width: 50, height: 80 },
-    { src: "/github.svg", alt: "GitHub", width: 40, height: 80 },
+    { src: "/github2.svg", alt: "GitHub", width: 40, height: 80 },
     { src: "/postgresql.svg", alt: "PostgreSQL", width: 40, height: 80 },
     { src: "/mysql.svg", alt: "MySQL", width: 40, height: 80 },
     { src: "/nodejs.svg", alt: "Node.js", width: 100, height: 68 },

@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col px-8 pt-10 lg:flex-row lg:items-center lg:justify-between lg:px-32">
+    <div className="flex flex-col px-8 pt-10 lg:flex-row lg:items-center lg:justify-between lg:px-32 lg:pb-10">
       <div className="text-4xl font-bold leading-[48px] lg:text-5xl lg:leading-[64px]">
         <h1>HI, I’M HAMZA.</h1>
 
@@ -33,7 +33,7 @@ const Hero = () => {
       </div>
 
       <Image
-        src={"/heroImage.png"}
+        src={"/heroImage6.png"}
         alt="pfp"
         height={562}
         width={562}

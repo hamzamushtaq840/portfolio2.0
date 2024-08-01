@@ -25,11 +25,15 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
         />
-
-        <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
       </head>
-      <body className={bai.className}>{children}</body>
-      <Analytics />
+      <body className={bai.className}>
+        {children}
+        <Analytics />
+        <script
+          src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"
+          async
+        ></script>
+      </body>
     </html>
   );
 }

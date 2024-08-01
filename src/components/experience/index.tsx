@@ -3,18 +3,20 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div className="relative my-32 flex flex-col items-center overflow-hidden px-56">
+    <div className="relative my-32 flex flex-col items-center overflow-hidden px-8 lg:px-56">
       <Image src={"/singlelogo.svg"} alt="pfp" height={40} width={40} />
-      <h2 className="mt-6 text-5xl font-bold leading-[64px]">Experience</h2>
-      <span className="mb-16 mt-2 text-lg font-medium leading-[32px] tracking-widest">
+      <h2 className="z-20 mt-6 text-5xl font-bold leading-[64px]">
+        Experience
+      </h2>
+      <span className="z-20 mb-16 mt-2 text-center text-lg font-medium leading-[32px] tracking-widest">
         REGONITIONS & ACCOIMPLISHMENTS
       </span>
-      <div className="flex w-full flex-col gap-6">
+      <div className="z-20 flex w-full flex-col gap-6">
         {[1, 2, 3, 4].map((v, i) => {
           return (
             <div
               key={i}
-              className="flex items-center gap-6 border border-white px-8 py-9"
+              className="flex flex-col gap-3 border border-white px-8 py-5 lg:flex-row lg:items-center lg:gap-6 lg:py-9"
             >
               <div className="flex flex-1 flex-col gap-2">
                 <span className="text font-bold text-textOrange">
@@ -35,7 +37,7 @@ const Experience = () => {
         src={"/side2.svg"}
         width={270}
         height={100}
-        className="absolute left-[-130px]"
+        className="absolute left-[-130px] z-10"
       />
     </div>
   );

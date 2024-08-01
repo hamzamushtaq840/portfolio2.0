@@ -2,11 +2,11 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="flex items-center justify-between px-56 py-14">
+    <div className="flex flex-col items-center justify-between px-8 pb-24 lg:flex-row lg:px-56">
       <span className="text-2xl font-bold leading-[32px]">
         Wanna hit up with something ?
       </span>
-      <form className="flex gap-4">
+      <form className="mt-10 flex flex-col gap-6 lg:mt-0 lg:flex-row lg:gap-4">
         <input
           required
           type="text"

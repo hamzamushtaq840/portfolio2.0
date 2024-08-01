@@ -54,3 +54,8 @@ html {
   border-color: #e94d35; /* Ensure the border color changes to orange on focus */
   outline: none; /* Remove the default outline */
 }
+
+.mf-cursor {
+  /* z-index: 10000; */
+  color: #e94d35;
+}

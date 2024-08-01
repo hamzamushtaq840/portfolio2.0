@@ -1,3 +1,4 @@
+
 import Certifications from "@/components/certifications";
 import Contact from "@/components/contact";
 import Details from "@/components/details";
@@ -10,18 +11,19 @@ import NavBar from "@/components/navbar";
 import LatestProjects from "@/components/projects";
 
 export default function Home() {
+
   return (
     <div className="bg-background2 text-white">
       <NavBar />
       <Hero />
-      {/* <Marquee /> */}
-      {/* <Intro /> */}
-      {/* <Details /> */}
-      {/* <Certifications /> */}
-      {/* <LatestProjects /> */}
-      {/* <Experience /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Marquee />
+      <Intro />
+      <Details />
+      <Certifications />
+      <LatestProjects />
+      <Experience />
+      <Contact />
+      <Footer />
     </div>
   );
 }

@@ -9,7 +9,7 @@ const data = [
 
 const Details = () => {
   return (
-    <div className="grid grid-cols-3 px-56">
+    <div className="grid grid-cols-3 px-8 lg:px-56">
       {data.map((v, i) => {
         return (
           <div
@@ -19,8 +19,12 @@ const Details = () => {
               i == 1 && "bg-white text-black",
             )}
           >
-            <span className="text-6xl font-bold">{v.value}</span>
-            <span className="text-lg font-bold">{v.label}</span>
+            <span className="h-1/2 text-4xl font-bold lg:text-6xl">
+              {v.value}
+            </span>
+            <span className="h-1/2 text-center text-xs font-bold lg:text-lg">
+              {v.label}
+            </span>
           </div>
         );
       })}

@@ -3,8 +3,8 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col px-8 pb-5 pt-10 lg:flex-row lg:items-center lg:justify-between lg:px-32">
-      <div className="text-5xl font-bold leading-[58px] lg:text-5xl lg:leading-[64px]">
+    <div className="flex flex-col px-8 pt-10 lg:flex-row lg:items-center lg:justify-between lg:px-32">
+      <div className="text-4xl font-bold leading-[48px] lg:text-5xl lg:leading-[64px]">
         <h1>HI, I’M HAMZA.</h1>
 
         <div className="flex flex-wrap items-center lg:gap-3">
@@ -23,7 +23,7 @@ const Hero = () => {
           BASED IN <s>PAKISTAN</s>
         </h1>
 
-        <span className="my-10 flex justify-center gap-2 text-lg lg:justify-start lg:text-2xl">
+        <span className="mb-14 mt-10 flex flex-wrap justify-center gap-2 text-lg lg:mb-14 lg:justify-start lg:text-2xl">
           <span>DESIGN</span>
           <Image src={"/break.svg"} alt="pfp" height={20} width={20} />
           <span>DEVELOPMENT</span>

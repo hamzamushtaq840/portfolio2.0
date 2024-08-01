@@ -12,16 +12,16 @@ import LatestProjects from "@/components/projects";
 export default function Home() {
   return (
     <div className="bg-background2 text-white">
-      <NavBar />
+      {/* <NavBar /> */}
       <Hero />
-      <Marquee />
-      <Intro />
-      <Details />
-      <Certifications />
-      <LatestProjects />
-      <Experience />
-      <Contact />
-      <Footer />
+      {/* <Marquee /> */}
+      {/* <Intro /> */}
+      {/* <Details /> */}
+      {/* <Certifications /> */}
+      {/* <LatestProjects /> */}
+      {/* <Experience /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -35,8 +35,9 @@ const Hero = () => {
       <Image
         src={"/heroImage6.png"}
         alt="pfp"
-        height={562}
-        width={562}
+        height={532}
+        width={532}
+        // className="rounded-full border"
         sizes="(max-width: 768px) 60vw, (max-width: 1200px) 50vw, 33vw"
       />
     </div>

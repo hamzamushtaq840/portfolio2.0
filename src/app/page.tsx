@@ -12,7 +12,7 @@ import LatestProjects from "@/components/projects";
 export default function Home() {
   return (
     <div className="bg-background2 text-white">
-      {/* <NavBar /> */}
+      <NavBar />
       <Hero />
       {/* <Marquee /> */}
       {/* <Intro /> */}

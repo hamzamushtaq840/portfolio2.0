@@ -18,7 +18,7 @@ export default function Home() {
       <Marquee />
       <Intro />
       <Details />
-      <TextReveal />
+      {/* <TextReveal /> */}
       <Certifications />
       <LatestProjects />
       <Experience />

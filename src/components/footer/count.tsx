@@ -1,32 +1,42 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import countapi from "countapi-js";
+import React, { useEffect, useState, useRef } from "react";
 
 const Count = () => {
   const [count, setCount] = useState<number | null>(null);
+  const hasFetched = useRef(false);
 
   useEffect(() => {
-    const updateCounter = async () => {
-      try {
-        console.log("Fetching count...");
-        // Increment the count
-        const incrementResponse = await countapi.hit(
-          "hamzamushtaq.vercel.app",
-          "visits",
-        );
-        console.log("Response received:", incrementResponse);
+    if (hasFetched.current) return;
+    hasFetched.current = true;
 
-        // Set the count state to update the display
-        setCount(incrementResponse.value);
+    const fetchCount = async () => {
+      try {
+        const response = await fetch("/api/counter");
+        const data = await response.json();
+        console.log("Fetched count:", data);
+        setCount(data.count);
       } catch (error) {
-        console.error("Error updating the counter:", error);
+        console.error("Error fetching count:", error);
       }
     };
 
-    updateCounter();
+    const updateCounter = async () => {
+      try {
+        await fetch("/api/counter", { method: "POST" });
+        fetchCount(); // Update the displayed count after incrementing
+      } catch (error) {
+        console.error("Error updating count:", error);
+      }
+    };
+
+    updateCounter(); // Increment and fetch the count on component mount
   }, []);
 
-  return <div>Count: {count !== null ? count : "Loading..."}</div>;
+  return (
+    <div className="rounded-sm px-2 text-sm capitalize text-textOrange">
+      Visit count : {count !== null ? count : "..."}
+    </div>
+  );
 };
 
 export default Count;

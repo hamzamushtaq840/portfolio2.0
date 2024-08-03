@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Count from "./count";
 
 const Footer = () => {
   return (
@@ -40,6 +41,7 @@ const Footer = () => {
           />
         </a>
       </div>
+      <Count />
     </div>
   );
 };

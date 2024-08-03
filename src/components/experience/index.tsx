@@ -11,22 +11,25 @@ const Experience = () => {
       <span className="z-20 mb-16 mt-2 text-center text-lg font-medium leading-[32px] tracking-widest">
         REGONITIONS & ACCOIMPLISHMENTS
       </span>
-      <div className="z-20 flex w-full flex-col gap-6">
+      <div className="z-20 grid w-full grid-cols-1 gap-10 lg:grid-cols-2">
         {[1, 2, 3, 4].map((v, i) => {
           return (
             <div
               key={i}
-              className="flex flex-col gap-3 border border-white px-8 py-5 lg:flex-row lg:items-center lg:gap-6 lg:py-9"
+              className="flex gap-3 border border-white px-8 py-5 lg:flex-row lg:items-center lg:gap-6 lg:py-9"
             >
-              <div className="flex flex-1 flex-col gap-2">
-                <span className="text font-bold text-textOrange">
-                  NOV 2022 - DEC 2023
-                </span>
+              <div className="flex flex-1 flex-col gap-6">
+                <div className="flex h-12 w-12 items-center justify-center bg-textOrange text-lg font-bold text-white">
+                  {v}
+                </div>
                 <span className="text-xl font-bold">APIMIO</span>
               </div>
-              <span className="text-lg font-thin tracking-wide">
-                FRONTEND DEVELOPER
-              </span>
+              <div className="flex h-full flex-col items-end justify-between">
+                <span className="text font-bold">NOV 2022 - DEC 2023</span>
+                <span className="text-lg font-thin tracking-wide">
+                  FRONTEND DEVELOPER
+                </span>
+              </div>
             </div>
           );
         })}

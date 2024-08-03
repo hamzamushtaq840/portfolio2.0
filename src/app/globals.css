@@ -7,8 +7,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
+}
+
+.reveal-text {
+  filter: drop-shadow(0 0 0.06rem rgb(255, 255, 255));
 }
 
 .stock-ticker {

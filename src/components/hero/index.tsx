@@ -14,6 +14,7 @@ const Hero = () => {
             alt="pfp"
             height={40}
             width={40}
+            priority
           />
           <span>DEVELOPER</span>
         </div>
@@ -24,9 +25,9 @@ const Hero = () => {
 
         <span className="mb-14 mt-10 flex flex-wrap justify-center gap-2 text-lg lg:mb-14 lg:justify-start lg:text-2xl">
           <span>DESIGN</span>
-          <Image src={"/break.svg"} alt="pfp" height={20} width={20} />
+          <Image src={"/break.svg"} priority alt="pfp" height={20} width={20} />
           <span>DEVELOPMENT</span>
-          <Image src={"/break.svg"} alt="pfp" height={20} width={20} />
+          <Image src={"/break.svg"} priority alt="pfp" height={20} width={20} />
           <span>WEBFLOW</span>
         </span>
       </div>
@@ -35,8 +36,7 @@ const Hero = () => {
         src={"/heroImage10.png"}
         alt="pfp"
         height={532}
-        width={532}
-        // className="rounded-full border"
+        priority
         sizes="(max-width: 768px) 60vw, (max-width: 1200px) 50vw, 33vw"
       />
     </div>

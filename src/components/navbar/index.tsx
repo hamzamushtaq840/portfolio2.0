@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <div className="relative flex items-center justify-between px-7 pb-2 pt-7 lg:px-32 lg:pb-3 lg:pt-7">
       <div className="flex items-center gap-2">
-        <Image src={"/logo.svg"} alt={"logo"} width={32} height={32} />
+        <Image priority src={"/logo.svg"} alt={"logo"} width={32} height={32} />
         <span className="text-3xl font-bold">hamza.</span>
       </div>
 

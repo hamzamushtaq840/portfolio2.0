@@ -32,7 +32,7 @@ export default function RootLayout({
         <Analytics />
         <Script
           src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         ></Script>
       </body>
     </html>

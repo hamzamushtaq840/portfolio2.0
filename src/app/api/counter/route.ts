@@ -1,7 +1,7 @@
 import { kv } from "@vercel/kv";
 import { NextRequest, NextResponse } from "next/server";
 
-const MAX_REQUESTS = 1;
+const MAX_REQUESTS = 2;
 const TIME_WINDOW = 60 * 60 * 1000; // 1 hour
 
 export async function GET() {
@@ -17,7 +17,8 @@ export async function POST(req: NextRequest) {
     ((await kv.get(`request_count_${ip}`)) as number | null) ?? 0;
 
   if (requestCount >= MAX_REQUESTS) {
-    return NextResponse.json({ error: "Too many requests" }, { status: 429 });
+    const count = await kv.get("counter");
+    return NextResponse.json({ count });
   }
 
   // Increment request count for the IP

@@ -36,8 +36,8 @@ const Hero = () => {
         src={"/heroImage10.png"}
         alt="pfp"
         height={532}
+        width={532}
         priority
-        sizes="(max-width: 768px) 60vw, (max-width: 1200px) 50vw, 33vw"
       />
     </div>
   );

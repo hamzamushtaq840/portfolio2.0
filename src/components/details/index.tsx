@@ -1,5 +1,4 @@
 import { cn } from "@/utils/utils";
-import React from "react";
 
 const data = [
   { label: "YEARS OF EXPERIENCE", value: "4+" },

@@ -57,8 +57,8 @@ html {
 }
 
 .input-custom:focus {
-  border-color: #e94d35; /* Ensure the border color changes to orange on focus */
-  outline: none; /* Remove the default outline */
+  border-color: #e94d35;
+  outline: none;
 }
 
 .mf-cursor {

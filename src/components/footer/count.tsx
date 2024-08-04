@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Count = () => {
   const [count, setCount] = useState<number | null>(null);
@@ -13,20 +13,15 @@ const Count = () => {
       try {
         const response = await fetch("/api/counter");
         const data = await response.json();
-        console.log("Fetched count:", data);
         setCount(data.count);
-      } catch (error) {
-        console.error("Error fetching count:", error);
-      }
+      } catch (error) {}
     };
 
     const updateCounter = async () => {
       try {
         await fetch("/api/counter", { method: "POST" });
         fetchCount(); // Update the displayed count after incrementing
-      } catch (error) {
-        console.error("Error updating count:", error);
-      }
+      } catch (error) {}
     };
 
     updateCounter(); // Increment and fetch the count on component mount

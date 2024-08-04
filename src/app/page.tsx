@@ -8,7 +8,6 @@ import Intro from "@/components/intro";
 import Marquee from "@/components/marquee";
 import NavBar from "@/components/navbar";
 import LatestProjects from "@/components/projects";
-import TextReveal from "@/components/textReveal";
 
 export default function Home() {
   return (

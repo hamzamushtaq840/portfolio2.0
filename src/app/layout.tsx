@@ -1,7 +1,8 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Bai_Jamjuree } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
 
 const bai = Bai_Jamjuree({
   subsets: ["latin-ext"],
@@ -29,10 +30,10 @@ export default function RootLayout({
       <body className={bai.className}>
         {children}
         <Analytics />
-        <script
+        <Script
           src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"
-          async
-        ></script>
+          strategy="afterInteractive"
+        ></Script>
       </body>
     </html>
   );

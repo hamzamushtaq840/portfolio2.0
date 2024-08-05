@@ -65,3 +65,12 @@ export const experiences = [
     timeline: "December 2019 - August 2020",
   },
 ];
+
+export const projects = [
+  {
+    id: 1,
+    name: "Yoomy",
+    pictures: "/yoomy.png",
+    desc: "Video Calling and Scheduling Website",
+  },
+];

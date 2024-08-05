@@ -25,7 +25,7 @@ const Hero = () => {
           <Image src={"/break.svg"} priority alt="pfp" height={20} width={20} />
           <span>DEVELOPMENT</span>
           <Image src={"/break.svg"} priority alt="pfp" height={20} width={20} />
-          <span>INTEGRATION</span>
+          <span>WEBFLOW</span>
         </span>
       </div>
 

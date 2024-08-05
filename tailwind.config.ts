@@ -16,7 +16,7 @@ const config: Config = {
       colors: {
         background: "#F2F1EF",
         background2: "#20262E",
-        textOrange: "#F7744A",
+        textOrange: "#e94d35",
       },
       fontSize: {
         "custom-10": "clamp(9px,0.5208333333333334vw,10px)",

@@ -15,19 +15,20 @@ const Intro = () => {
 
         <TextReveal
           text={intro.title}
-          start={"top 80%"}
-          end={"bottom 55%"}
+          start={"top 70%"}
+          end={"bottom 45%"}
           className="text-5xl font-bold leading-[64px]"
+          marker
         />
       </div>
 
       {/* right-section */}
       <div className="flex flex-col gap-10">
-        <span className="text-xl font-bold leading-9 text-[#ffffffe0] lg:text-3xl lg:leading-[40px]">
+        <span className="text-2xl font-bold leading-9 text-[#ffffffe0] lg:text-3xl lg:leading-[40px]">
           {intro.heading}
         </span>
 
-        <span className="font-medium text-[#ffffffa2] lg:text-lg">
+        <span className="text-lg font-medium text-[#ffffffa2]">
           {intro.aboutMe}
         </span>
 

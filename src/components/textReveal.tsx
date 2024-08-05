@@ -1,24 +1,35 @@
 "use client";
+import { cn } from "@/utils/utils";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef } from "react";
 
-function TextReveal() {
+function TextReveal({
+  text,
+  className,
+  start,
+  end,
+  marker,
+}: {
+  text: string;
+  className: string;
+  start: string;
+  end: string;
+  marker?: boolean;
+}) {
   const lettersRef = useRef<HTMLSpanElement[]>([]);
   const triggerRef = useRef<HTMLDivElement>(null);
 
   gsap.registerPlugin(ScrollTrigger);
-  const text =
-    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.";
 
   useEffect(() => {
     const anim = gsap.to(lettersRef.current, {
       scrollTrigger: {
         trigger: triggerRef.current,
         scrub: true,
-        start: "top bottom",
-        end: "bottom 50%",
-        markers: true,
+        start: start,
+        end: end,
+        markers: marker,
       },
       color: "#ffffff",
       duration: 10,
@@ -31,11 +42,14 @@ function TextReveal() {
 
   return (
     <>
-      <div className="mx-32 my-20 flex justify-center">
-        <div ref={triggerRef} className="w-1/2">
+      <div>
+        <div ref={triggerRef}>
           {text.split("").map((letter, index) => (
             <span
-              className="reveal-text text-justify text-7xl font-bold text-[#20262E]"
+              className={cn(
+                "reveal-text text-justify font-bold text-[#20262E]",
+                className,
+              )}
               key={index}
               ref={(el) => {
                 if (el) lettersRef.current[index] = el;

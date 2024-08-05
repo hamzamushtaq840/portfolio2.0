@@ -1,3 +1,4 @@
+import { experiences } from "@/constants/consts";
 import Image from "next/image";
 
 const Experience = () => {
@@ -11,7 +12,7 @@ const Experience = () => {
         REGONITIONS & ACCOIMPLISHMENTS
       </span>
       <div className="z-20 grid w-full grid-cols-1 gap-10 lg:grid-cols-2">
-        {[1, 2, 3, 4].map((v, i) => {
+        {experiences.map((v, i) => {
           return (
             <div
               key={i}
@@ -19,14 +20,14 @@ const Experience = () => {
             >
               <div className="flex flex-1 flex-col gap-6">
                 <div className="flex h-12 w-12 items-center justify-center bg-textOrange text-lg font-bold text-white">
-                  {v}
+                  {i + 1}
                 </div>
-                <span className="text-xl font-bold">APIMIO</span>
+                <span className="text-2xl font-bold">{v.organizationName}</span>
               </div>
               <div className="flex h-full flex-col items-end justify-between">
-                <span className="text font-bold">NOV 2022 - DEC 2023</span>
+                <span className="text font-bold">{v.timeline}</span>
                 <span className="text-lg font-thin tracking-wide">
-                  FRONTEND DEVELOPER
+                  {v.position}
                 </span>
               </div>
             </div>

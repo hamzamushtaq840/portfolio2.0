@@ -1,3 +1,4 @@
+import { certifications } from "@/constants/consts";
 import Image from "next/image";
 
 const Certifications = () => {
@@ -9,26 +10,26 @@ const Certifications = () => {
         REGONITIONS & ACCOIMPLISHMENTS
       </span>
       <div className="z-[20] flex w-full flex-col gap-6">
-        {[1, 2, 3, 4].map((v, i) => {
+        {certifications.map((v, i) => {
           return (
             <div
               key={i}
               className="flex flex-col items-center gap-6 border border-white px-8 py-9 lg:flex-row"
             >
               <div className="flex h-12 w-12 items-center justify-center bg-textOrange text-lg font-bold text-white">
-                {v}
+                {i + 1}
               </div>
               <div className="flex flex-1 flex-col gap-2">
                 <span className="text-center text-2xl font-bold lg:text-3xl">
-                  Webflow Awwwards Team
+                  {v.courseName}
                 </span>
                 <span className="text-center text-base font-thin lg:text-lg">
-                  Runner Up - Webflow Expert Design
+                  {v.organizationName}
                 </span>
               </div>
               <div className="flex gap-2">
                 <span className="text-lg font-semibold tracking-wide">
-                  2021
+                  {v.year}
                 </span>
                 <Image
                   alt={"side"}

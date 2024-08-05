@@ -1,19 +1,6 @@
+import { intro } from "@/constants/consts";
 import Image from "next/image";
-
-const data = [
-  {
-    label: "BORN IN",
-    value: "Pakistan",
-  },
-  {
-    label: "EXPERIENCE",
-    value: "4+ Years",
-  },
-  {
-    label: "DATE OF BIRTH",
-    value: "26 Feb 2000",
-  },
-];
+import TextReveal from "../textReveal";
 
 const Intro = () => {
   return (
@@ -26,25 +13,24 @@ const Intro = () => {
           <span>Mushtaq</span>
         </div>
 
-        <span className="text-5xl font-bold leading-[64px]">
-          Lead product designer and art director.
-        </span>
+        <TextReveal
+          text={intro.title}
+          start={"top 85%"}
+          end={"bottom 55%"}
+          className="text-5xl font-bold leading-[64px]"
+        />
       </div>
 
       {/* right-section */}
       <div className="flex flex-col gap-10">
         <span className="text-2xl font-bold leading-[40px] lg:text-3xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore
+          {intro.heading}
         </span>
 
-        <span className="text-lg font-medium">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore
-        </span>
+        <span className="text-lg font-medium">{intro.aboutMe}</span>
 
         <div className="grid grid-cols-2 gap-y-4 lg:grid-cols-3">
-          {data.map((v, i) => {
+          {intro.cards.map((v, i) => {
             return (
               <div key={i} className="flex flex-col gap-2">
                 <span className="text-sm font-semibold tracking-wider text-textOrange">

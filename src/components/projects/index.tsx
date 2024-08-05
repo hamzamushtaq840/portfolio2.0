@@ -1,6 +1,5 @@
 import { cn } from "@/utils/utils";
 import Image from "next/image";
-import React from "react";
 
 const LatestProjects = () => {
   return (

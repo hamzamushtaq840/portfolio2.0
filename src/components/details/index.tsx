@@ -1,15 +1,10 @@
+import { details } from "@/constants/consts";
 import { cn } from "@/utils/utils";
-
-const data = [
-  { label: "YEARS OF EXPERIENCE", value: "4+" },
-  { label: "PROJECT COMPLETED", value: "4+" },
-  { label: "HAPPY CLIENTS", value: "4+" },
-];
 
 const Details = () => {
   return (
     <div className="grid grid-cols-3 px-8 lg:px-56">
-      {data.map((v, i) => {
+      {details.map((v, i) => {
         return (
           <div
             key={i}

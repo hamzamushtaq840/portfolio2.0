@@ -16,27 +16,43 @@ const Marquee = () => {
 
   return (
     <div className="overflow-hidden py-20">
-      <div className="stock-ticker">
+      <div className="stock-ticker bg-black">
         <ul>
           {items.map((item, index) => (
-            <li key={index}>
-              <Image
+            <li key={index} className="flex gap-16 text-lg font-bold uppercase">
+              {/* <Image
                 src={item.src}
                 alt={item.alt}
                 width={item.width}
                 height={item.height}
+              /> */}
+              {item.alt}
+              <Image
+                src={"/break.svg"}
+                priority
+                alt="pfp"
+                height={20}
+                width={20}
               />
             </li>
           ))}
         </ul>
         <ul className="marquee-item">
           {items.map((item, index) => (
-            <li key={index}>
-              <Image
+            <li key={index} className="flex gap-16 text-lg font-bold uppercase">
+              {/* <Image
                 src={item.src}
                 alt={item.alt}
                 width={item.width}
                 height={item.height}
+              /> */}
+              {item.alt}
+              <Image
+                src={"/break.svg"}
+                priority
+                alt="pfp"
+                height={20}
+                width={20}
               />
             </li>
           ))}

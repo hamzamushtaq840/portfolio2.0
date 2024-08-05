@@ -1,5 +1,7 @@
+"use client";
 import { details } from "@/constants/consts";
 import { cn } from "@/utils/utils";
+import CountUp from "react-countup";
 
 const Details = () => {
   return (
@@ -14,7 +16,7 @@ const Details = () => {
             )}
           >
             <span className="h-1/2 text-4xl font-bold lg:text-6xl">
-              {v.value}
+              <CountUp enableScrollSpy={true} end={v.value} duration={3.75} />+
             </span>
             <span className="h-1/2 text-center text-xs font-bold lg:text-lg">
               {v.label}

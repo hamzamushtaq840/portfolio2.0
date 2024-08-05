@@ -5,10 +5,10 @@ const Experience = () => {
   return (
     <div className="relative my-32 flex flex-col items-center overflow-hidden px-8 lg:px-56">
       <Image src={"/singlelogo.svg"} alt="pfp" height={40} width={40} />
-      <h2 className="z-20 mt-6 text-5xl font-bold leading-[64px]">
+      <h2 className="text-outline mt-6 text-5xl font-bold leading-[64px]">
         Experience
       </h2>
-      <span className="z-20 mb-16 mt-2 text-center text-lg font-medium leading-[32px] tracking-widest">
+      <span className="mb-16 mt-3 text-center font-medium leading-[32px] tracking-widest">
         REGONITIONS & ACCOIMPLISHMENTS
       </span>
       <div className="z-20 grid w-full grid-cols-1 gap-10 lg:grid-cols-2">

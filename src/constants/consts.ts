@@ -22,9 +22,9 @@ export const intro = {
 };
 
 export const details = [
-  { label: "YEARS OF EXPERIENCE", value: "4+" },
-  { label: "PROJECT COMPLETED", value: "40+" },
-  { label: "HAPPY CLIENTS", value: "20+" },
+  { label: "YEARS OF EXPERIENCE", value: 4 },
+  { label: "PROJECT COMPLETED", value: 40 },
+  { label: "HAPPY CLIENTS", value: 20 },
 ];
 
 export const certifications = [

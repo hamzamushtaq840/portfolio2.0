@@ -5,10 +5,10 @@ const LatestProjects = () => {
   return (
     <div className="mt-20 flex flex-col items-center px-8 lg:mt-32 lg:px-56">
       <Image src={"/singlelogo.svg"} alt="pfp" height={40} width={40} />
-      <h2 className="mt-6 text-center text-5xl font-bold leading-[64px]">
+      <h2 className="text-outline mt-6 text-5xl font-bold leading-[64px]">
         LATEST PROJECTS
       </h2>
-      <span className="mb-16 mt-2 text-center text-lg font-medium leading-[32px] tracking-widest lg:mb-24">
+      <span className="mb-16 mt-3 text-center font-medium leading-[32px] tracking-widest">
         REGONITIONS & ACCOIMPLISHMENTS
       </span>
 

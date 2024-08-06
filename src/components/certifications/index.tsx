@@ -14,9 +14,9 @@ const Certifications = () => {
       />
       <TextReveal
         text={`Certifications`}
-        start={"top 60%"}
-        end={"bottom 40%"}
-        className="text-outline text-5xl font-bold leading-[64px]"
+        start={"top 70%"}
+        end={"bottom 20%"}
+        className="text-outline text-4xl font-bold leading-[64px] lg:text-5xl"
       />
       <span className="mb-16 mt-3 text-center font-medium leading-[32px] tracking-widest">
         REGONITIONS & ACCOIMPLISHMENTS

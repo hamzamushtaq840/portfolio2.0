@@ -42,7 +42,7 @@ function TextReveal({
 
   return (
     <>
-      <div ref={triggerRef}>
+      <div ref={triggerRef} className="z-20">
         {text.split("").map((letter, index) => (
           <span
             className={cn(

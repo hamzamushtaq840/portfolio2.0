@@ -19,9 +19,9 @@ const LatestProjects = () => {
       <div className="flex text-center">
         <TextReveal
           text={`Latest Projects`}
-          start={"top 60%"}
-          end={"bottom 40%"}
-          className="text-outline mt-6 text-center text-5xl font-bold leading-[64px]"
+          start={"top 70%"}
+          end={"bottom 20%"}
+          className="text-outline mt-6 text-center text-4xl font-bold leading-[64px] lg:text-5xl"
         />
       </div>
       <span className="mb-16 mt-3 text-center font-medium leading-[32px] tracking-widest">
@@ -46,10 +46,10 @@ const LatestProjects = () => {
                 className="rounded-md object-cover"
               />
               <div className="flex flex-col justify-between py-0 lg:py-5">
-                <span className="mb-8 flex self-start bg-textOrange px-4 py-2 text-lg font-bold leading-[32px]">
+                <span className="mb-4 flex self-start bg-textOrange px-4 py-2 text-lg font-bold leading-[32px]">
                   {v.name}
                 </span>
-                <span className="mb-4 flex text-4xl font-bold leading-[46px] lg:mb-8 lg:text-5xl lg:leading-[56px]">
+                <span className="mb-6 flex text-3xl font-bold leading-[46px] lg:mb-8 lg:text-5xl lg:leading-[56px]">
                   {v.desc}
                 </span>
                 <div className="flex gap-2">

@@ -51,7 +51,7 @@ const Hamburger = () => {
       },
       visible: true,
       visibleOnState: false,
-      speed: 0.55,
+      speed: 1,
       ease: "expo.out",
       overwrite: true,
       skewing: 0,

@@ -33,13 +33,6 @@ const Certifications = () => {
                 <span className="text-lg font-semibold tracking-wide">
                   {v.year}
                 </span>
-                <Image
-                  alt={"side"}
-                  className="fill-white hover:cursor-pointer hover:fill-blue-500"
-                  src={"/link.svg"}
-                  width={20}
-                  height={20}
-                />
               </div>
             </div>
           );
@@ -51,7 +44,7 @@ const Certifications = () => {
         src={"/side.svg"}
         width={160}
         height={100}
-        className="absolute right-[-80px] top-[50%] z-[10] -translate-y-[-50%] rotate-[25deg]"
+        className="absolute right-[-80px] top-[50%] z-[10] -translate-y-[-50%] rotate-[25deg] opacity-50"
       />
     </div>
   );

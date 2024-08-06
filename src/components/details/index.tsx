@@ -16,7 +16,7 @@ const Details = () => {
             )}
           >
             <span className="h-1/2 text-4xl font-bold lg:text-6xl">
-              <CountUp enableScrollSpy={true} end={v.value} duration={3.75} />+
+              <CountUp enableScrollSpy={true} end={v.value} duration={2.5} />+
             </span>
             <span className="h-1/2 text-center text-xs font-bold lg:text-lg">
               {v.label}

@@ -3,7 +3,10 @@ import Image from "next/image";
 
 const Experience = () => {
   return (
-    <div className="relative mb-32 mt-20 flex flex-col items-center overflow-hidden px-8 lg:px-56">
+    <div
+      id="experience"
+      className="relative mb-32 mt-20 flex flex-col items-center overflow-hidden px-8 lg:px-56"
+    >
       <Image src={"/singlelogo.svg"} alt="pfp" height={40} width={40} />
       <h2 className="text-outline z-20 mt-6 text-5xl font-bold leading-[64px]">
         Experience
@@ -40,7 +43,7 @@ const Experience = () => {
         src={"/side2.svg"}
         width={270}
         height={100}
-        className="absolute left-[-130px] z-10"
+        className="absolute left-[-130px] z-10 opacity-50"
       />
     </div>
   );

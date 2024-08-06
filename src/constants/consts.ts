@@ -62,15 +62,58 @@ export const experiences = [
   {
     organizationName: "Fiverr",
     position: "Front End Developer",
-    timeline: "December 2019 - August 2020",
+    timeline: "Dec 2019 - Aug 2020",
   },
 ];
 
 export const projects = [
   {
     id: 1,
-    name: "Yoomy",
-    pictures: "/yoomy.png",
-    desc: "Video Calling and Scheduling Website",
+    name: "YOOMY",
+    picture: "/yoomy.png",
+    desc: "Video Calling and Scheduling Webapp",
+    live: "https://yoomyvideo.vercel.app/",
+    codebase: "https://github.com/hamzamushtaq840/yoomy",
   },
+  {
+    id: 1,
+    name: "APIMIO",
+    picture: "/apimio.png",
+    desc: "Production Info Management Software (PIM)",
+    live: "https://app.apimio.com/dashboard",
+    codebase: "https://github.com/hamzamushtaq840/yoomy",
+    restrictedCodebase: true,
+  },
+  {
+    id: 1,
+    name: "99NAMESOFALLAH",
+    picture: "/99namesofallah.png",
+    desc: "WEBSITE FEATURING 99 NAMES OF ALLAH",
+    live: "https://99-names-of-allah.vercel.app",
+    codebase: "https://github.com/hamzamushtaq840/99-names-of-Allah",
+  },
+  {
+    id: 1,
+    name: "SERVE IT",
+    picture: "/serveit.png",
+    desc: "RESTAURANT MANAGEMENT FOR DESKTOPS",
+    live: "https://restaurant-serveit.netlify.app/dashboard",
+    codebase: "https://github.com/hamzamushtaq840/serveit-restaurant",
+  },
+];
+
+export const marqueeItems = [
+  "React",
+  "Next.js",
+  "JavaScript",
+  "TypeScript",
+  "Docker",
+  "Kubernetes",
+  "NodeJs",
+  "Express",
+  "Web Workers",
+  "Service Workers",
+  "MicroServices",
+  "WebRTC",
+  "Version Control",
 ];

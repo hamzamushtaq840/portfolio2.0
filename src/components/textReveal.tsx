@@ -29,7 +29,6 @@ function TextReveal({
         scrub: true,
         start: start,
         end: end,
-        markers: marker,
       },
       color: "#ffffff",
       duration: 10,

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Hamburger from "./Hamburger";
+import Link from "next/link";
 
 const NavBar = () => {
   return (
@@ -10,14 +11,29 @@ const NavBar = () => {
       </div>
 
       <ul className="hidden gap-8 font-semibold lg:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>
+          <Link className="hover:text-white/70" href="/#about">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link className="hover:text-white/70" href="/#experience">
+            Experience
+          </Link>
+        </li>
+        <li>
+          <Link className="hover:text-white/70" href="/#projects">
+            Projects
+          </Link>
+        </li>
       </ul>
 
-      <button className="hidden border border-white px-6 py-2 lg:block">
+      <Link
+        className="hidden border border-white px-6 py-2 hover:border-textOrange hover:text-white/80 lg:block"
+        href="/#contact"
+      >
         Let&apos;s Talk
-      </button>
+      </Link>
       <Hamburger />
     </div>
   );

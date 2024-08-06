@@ -1,11 +1,13 @@
 import { projects } from "@/constants/consts";
 import { cn } from "@/utils/utils";
 import Image from "next/image";
-import Link from "next/link";
 
 const LatestProjects = () => {
   return (
-    <div className="mt-20 flex flex-col items-center px-8 lg:mt-32 lg:px-56">
+    <div
+      id="projects"
+      className="mt-20 flex flex-col items-center px-8 lg:mt-32 lg:px-56"
+    >
       <Image src={"/singlelogo.svg"} alt="pfp" height={40} width={40} />
       <h2 className="text-outline mt-6 text-center text-5xl font-bold leading-[64px]">
         LATEST PROJECTS
@@ -20,16 +22,16 @@ const LatestProjects = () => {
             <div
               key={i}
               className={cn(
-                "flex flex-col gap-12 lg:flex-row lg:gap-14",
+                "flex flex-col items-center gap-12 lg:flex-row lg:gap-14",
                 i % 2 == 0 && "flex-col lg:flex-row-reverse",
               )}
             >
               <Image
-                src={"/projects/yoomy.png"}
+                src={`/projects${v.picture}`}
                 alt="pfp"
                 height={307}
-                width={460}
-                className="rounded-md"
+                width={510}
+                className="rounded-md object-cover"
               />
               <div className="flex flex-col justify-between py-0 lg:py-5">
                 <span className="mb-8 flex self-start bg-textOrange px-4 py-2 text-lg font-bold leading-[32px]">
@@ -38,11 +40,38 @@ const LatestProjects = () => {
                 <span className="mb-4 flex text-4xl font-bold leading-[46px] lg:mb-8 lg:text-5xl lg:leading-[56px]">
                   {v.desc}
                 </span>
-                <Link href={`/projects/${v.id}`}>
-                  <span className="flex cursor-pointer text-xl font-bold leading-[32px] hover:underline">
-                    Read More
-                  </span>
-                </Link>
+                <div className="flex gap-2">
+                  <a
+                    className="rounded-full border border-[#BDB8AD] p-2 transition-all duration-500 hover:scale-110 hover:border-white"
+                    rel="noreferrer"
+                    href={v.live}
+                    target="_blank"
+                  >
+                    <Image
+                      className="grayscale"
+                      src={"/computer.svg"}
+                      alt="pfp"
+                      height={20}
+                      width={20}
+                    />
+                  </a>
+                  {!v.restrictedCodebase && (
+                    <a
+                      className="rounded-full border border-[#BDB8AD] p-2 transition-all duration-500 hover:scale-110 hover:border-white"
+                      rel="noreferrer"
+                      href={v.codebase}
+                      target="_blank"
+                    >
+                      <Image
+                        className="grayscale"
+                        src={"/code.svg"}
+                        alt="pfp"
+                        height={20}
+                        width={20}
+                      />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           );

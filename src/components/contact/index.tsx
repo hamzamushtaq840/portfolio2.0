@@ -1,6 +1,9 @@
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-between px-8 pb-24 lg:flex-row lg:px-56">
+    <div
+      id="contact"
+      className="flex flex-col items-center justify-between px-8 pb-24 lg:flex-row lg:px-56"
+    >
       <span className="text-2xl font-bold leading-[32px]">
         Wanna hit up with something ?
       </span>

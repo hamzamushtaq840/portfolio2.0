@@ -18,7 +18,7 @@ const LatestProjects = () => {
       />
       <div className="flex text-center">
         <TextReveal
-          text={`Latest Projects`}
+          text={`Recent Projects`}
           start={"top 70%"}
           end={"bottom 20%"}
           className="text-outline mt-6 text-center text-4xl font-bold leading-[64px] lg:text-5xl"

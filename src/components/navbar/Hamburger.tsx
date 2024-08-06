@@ -4,6 +4,7 @@ import Lenis from "@studio-freight/lenis";
 import gsap from "gsap";
 import MouseFollower from "mouse-follower";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const Hamburger = () => {
@@ -104,9 +105,21 @@ const Hamburger = () => {
           showMenu && "h-[180px] py-5",
         )}
       >
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>
+          <Link className="hover:text-white/70" href="/#about">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link className="hover:text-white/70" href="/#experience">
+            Experience
+          </Link>
+        </li>
+        <li>
+          <Link className="hover:text-white/70" href="/#projects">
+            Projects
+          </Link>
+        </li>
       </ul>
     </>
   );

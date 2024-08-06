@@ -20,8 +20,7 @@ const Intro = () => {
           text={intro.title}
           start={"top 70%"}
           end={"bottom 45%"}
-          className="text-5xl font-bold leading-[64px]"
-          marker
+          className="text-5xl font-bold lg:leading-[64px]"
         />
       </div>
 

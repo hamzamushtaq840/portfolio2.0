@@ -1,6 +1,7 @@
 import { projects } from "@/constants/consts";
 import { cn } from "@/utils/utils";
 import Image from "next/image";
+import TextReveal from "../textReveal";
 
 const LatestProjects = () => {
   return (
@@ -8,10 +9,21 @@ const LatestProjects = () => {
       id="projects"
       className="mt-20 flex flex-col items-center px-8 lg:mt-32 lg:px-56"
     >
-      <Image src={"/singlelogo.svg"} alt="pfp" height={40} width={40} />
-      <h2 className="text-outline mt-6 text-center text-5xl font-bold leading-[64px]">
-        LATEST PROJECTS
-      </h2>
+      <Image
+        className="mb-6"
+        src={"/singlelogo.svg"}
+        alt="pfp"
+        height={40}
+        width={40}
+      />
+      <div className="flex text-center">
+        <TextReveal
+          text={`Latest Projects`}
+          start={"top 60%"}
+          end={"bottom 40%"}
+          className="text-outline mt-6 text-center text-5xl font-bold leading-[64px]"
+        />
+      </div>
       <span className="mb-16 mt-3 text-center font-medium leading-[32px] tracking-widest">
         REGONITIONS & ACCOIMPLISHMENTS
       </span>

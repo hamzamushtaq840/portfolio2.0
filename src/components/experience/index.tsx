@@ -1,5 +1,6 @@
 import { experiences } from "@/constants/consts";
 import Image from "next/image";
+import TextReveal from "../textReveal";
 
 const Experience = () => {
   return (
@@ -8,9 +9,12 @@ const Experience = () => {
       className="relative mb-32 mt-20 flex flex-col items-center overflow-hidden px-8 lg:px-56"
     >
       <Image src={"/singlelogo.svg"} alt="pfp" height={40} width={40} />
-      <h2 className="text-outline z-20 mt-6 text-5xl font-bold leading-[64px]">
-        Experience
-      </h2>
+      <TextReveal
+        text={`Experience`}
+        start={"top 60%"}
+        end={"bottom 40%"}
+        className="text-outline z-20 mt-6 text-5xl font-bold leading-[64px]"
+      />
       <span className="z-20 mb-16 mt-3 text-center font-medium leading-[32px] tracking-widest">
         REGONITIONS & ACCOIMPLISHMENTS
       </span>

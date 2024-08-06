@@ -29,6 +29,7 @@ function TextReveal({
         scrub: true,
         start: start,
         end: end,
+        markers: marker,
       },
       color: "#ffffff",
       duration: 10,
@@ -41,23 +42,21 @@ function TextReveal({
 
   return (
     <>
-      <div>
-        <div ref={triggerRef}>
-          {text.split("").map((letter, index) => (
-            <span
-              className={cn(
-                "reveal-text text-justify font-bold text-[#20262E]",
-                className,
-              )}
-              key={index}
-              ref={(el) => {
-                if (el) lettersRef.current[index] = el;
-              }}
-            >
-              {letter}
-            </span>
-          ))}
-        </div>
+      <div ref={triggerRef}>
+        {text.split("").map((letter, index) => (
+          <span
+            className={cn(
+              "reveal-text text-justify font-bold text-[#20262E]",
+              className,
+            )}
+            key={index}
+            ref={(el) => {
+              if (el) lettersRef.current[index] = el;
+            }}
+          >
+            {letter}
+          </span>
+        ))}
       </div>
     </>
   );

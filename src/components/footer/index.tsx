@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="flex flex-col justify-between bg-black px-8 py-14 lg:flex-row lg:px-56">
       <div className="flex flex-col items-center gap-10 lg:items-start">
-        <Image src={"/singlelogo.svg"} alt="pfp" height={20} width={30} />
+        <Image src={"/singlelogo2.svg"} alt="pfp" height={20} width={30} />
         <span>
           2024 © Made with <span className="text-red-600">❤</span> by Hamza
         </span>

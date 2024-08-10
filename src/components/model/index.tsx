@@ -30,6 +30,9 @@ function MeshComponent({ onLoad }: { onLoad: () => void }) {
     if (mesh.current && window.innerWidth > 700) {
       mesh.current.position.x = 0.2;
     }
+    if (mesh.current) {
+      mesh.current.rotation.y = -Math.PI / 4; // Rotate slightly to the left (adjust value as needed)
+    }
   }, [scene]);
 
   useFrame(({ clock }) => {

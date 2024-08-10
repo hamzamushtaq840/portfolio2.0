@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="flex flex-col-reverse gap-3 pt-10 lg:flex-row lg:items-center lg:justify-between lg:gap-0 lg:px-32 lg:pb-10">
       <div className="px-8 text-center text-4xl font-bold leading-[48px] lg:px-0 lg:text-left lg:text-5xl lg:leading-[64px]">
         <h1>HI, I’M HAMZA.</h1>
-        <div className="flex flex-wrap items-center justify-center lg:items-start lg:gap-3">
+        <div className="flex flex-wrap items-center justify-center lg:items-start lg:justify-start lg:gap-3">
           <span className="">FULL STACK</span>
           <Image
             src={"/singlelogo.svg"}

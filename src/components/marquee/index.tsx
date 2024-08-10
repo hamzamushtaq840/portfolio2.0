@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Marquee = () => {
   return (
-    <div className="overflow-hidden py-20">
+    <div className="overflow-hidden pb-20 pt-10 lg:pb-20 lg:pt-20">
       <div className="stock-ticker bg-black">
         <ul>
           {marqueeItems.map((item, index) => (

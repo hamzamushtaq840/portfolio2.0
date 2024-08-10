@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { Model } from "../model";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col px-8 pt-10 lg:flex-row lg:items-center lg:justify-between lg:px-32 lg:pb-10">
-      <div className="text-4xl font-bold leading-[48px] lg:text-5xl lg:leading-[64px]">
+    <div className="flex flex-col-reverse gap-3 pt-10 lg:flex-row lg:items-center lg:justify-between lg:gap-0 lg:px-32 lg:pb-10">
+      <div className="px-8 text-4xl font-bold leading-[48px] lg:px-0 lg:text-5xl lg:leading-[64px]">
         <h1>HI, I’M HAMZA.</h1>
         <div className="flex flex-wrap items-center lg:gap-3">
           <span className="">FULL STACK</span>
@@ -28,7 +29,8 @@ const Hero = () => {
           <span>WEBFLOW</span>
         </span>
       </div>
-
+      <Model />
+      {/* 
       <Image
         src={"/heroImage10.png"}
         alt="pfp"
@@ -36,7 +38,7 @@ const Hero = () => {
         width={532}
         priority
         sizes="(max-width: 768px) 348px, (max-width: 1200px) 384px, 522px"
-      />
+      /> */}
     </div>
   );
 };

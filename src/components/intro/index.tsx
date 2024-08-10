@@ -10,25 +10,19 @@ const Intro = () => {
     >
       {/* left-section */}
       <div className="flex flex-col gap-10">
-        <div className="flex gap-2 text-2xl font-semibold lg:text-3xl">
-          <span>Hamza</span>
-          <Image src={"/break.svg"} alt="pfp" height={20} width={20} />
-          <span>Mushtaq</span>
-        </div>
-
         <TextReveal
           text={intro.title}
           start={"top 70%"}
           end={"bottom 45%"}
-          className="text-5xl font-bold lg:leading-[64px]"
+          className="text-4xl font-bold lg:text-5xl lg:leading-[64px]"
         />
       </div>
 
       {/* right-section */}
       <div className="flex flex-col gap-10">
-        <span className="text-2xl font-bold leading-9 text-[#ffffffe0] lg:text-3xl lg:leading-[40px]">
+        {/* <span className="text-2xl font-bold leading-9 text-[#ffffffe0] lg:text-3xl lg:leading-[40px]">
           {intro.heading}
-        </span>
+        </span> */}
 
         <span className="text-lg font-medium text-[#ffffffa2]">
           {intro.aboutMe}

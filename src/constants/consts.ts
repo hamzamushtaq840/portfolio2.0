@@ -2,7 +2,8 @@ export const intro = {
   title: "Full Stack Developer and Solution Architect.",
   heading: `Crafting seamless user experiences with cutting-edge web technologies
           and robust backend solutions.`,
-  aboutMe: `Building and maintaining web applications. Skilled in both frontend
+  aboutMe: `Crafting seamless user experiences with cutting-edge web technologies
+          and robust backend solutions. Building and maintaining web applications. Skilled in both frontend
           and backend, and dedicated to staying current with the latest
           technologies and best practices.`,
   cards: [

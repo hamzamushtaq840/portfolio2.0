@@ -28,7 +28,7 @@ const Intro = () => {
           {intro.aboutMe}
         </span>
 
-        <div className="slg:grid-cols-3 grid grid-cols-3">
+        <div className="mb-4 grid grid-cols-2 gap-4 lg:mb-0 lg:grid-cols-3 lg:gap-0">
           {intro.cards.map((v, i) => {
             return (
               <div key={i} className="flex flex-col gap-2">

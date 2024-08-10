@@ -101,7 +101,7 @@ const Hamburger = () => {
       )}
       <ul
         className={cn(
-          "absolute left-8 right-8 top-20 flex h-[0px] flex-col items-center gap-8 overflow-hidden bg-[#181818] font-bold transition-all duration-500 lg:hidden",
+          "absolute left-8 right-8 top-20 z-50 flex h-[0px] flex-col items-center gap-8 overflow-hidden bg-[#181818] font-bold transition-all duration-500 lg:hidden",
           showMenu && "h-[180px] py-5",
         )}
       >

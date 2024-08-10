@@ -2,8 +2,28 @@
 
 import { useRef, useEffect, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, useGLTF, useProgress } from "@react-three/drei";
+import { Html, useProgress, OrbitControls, useGLTF } from "@react-three/drei";
 import { Mesh } from "three";
+import { Suspense } from "react";
+
+function Loader() {
+  const { progress } = useProgress();
+
+  // Calculate the width of the progress bar
+  const progressBarWidth = `${progress}%`;
+
+  return (
+    <div className="flex w-full flex-col items-center justify-center">
+      <div className="relative h-2 w-1/2 rounded bg-gray-300">
+        <div
+          className="absolute left-0 top-0 h-full rounded bg-textOrange"
+          style={{ width: progressBarWidth }}
+        />
+      </div>
+      <span className="mt-2 text-white"> Loading 3D model {progress}%</span>
+    </div>
+  );
+}
 
 function MeshComponent({ onLoad }: { onLoad: () => void }) {
   const fileUrl = "/smol_ame_in_an_upcycled_terrarium_hololiveen/scene.gltf";
@@ -16,6 +36,7 @@ function MeshComponent({ onLoad }: { onLoad: () => void }) {
     if (progress === 100) {
       onLoad(); // Notify parent component when loading is complete
     }
+    console.log(progress);
   }, [progress, onLoad]);
 
   useEffect(() => {
@@ -65,43 +86,15 @@ export function Model() {
 
   return (
     <div className="relative flex h-[45vh] w-full lg:h-[70vh] lg:w-[45%]">
-      {loading && (
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="h-20 w-20">
-            <svg
-              version="1.1"
-              id="L9"
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              viewBox="0 0 100 100"
-              enable-background="new 0 0 0 0"
-            >
-              <path
-                fill="#fff"
-                d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50"
-              >
-                <animateTransform
-                  attributeName="transform"
-                  attributeType="XML"
-                  type="rotate"
-                  dur="1s"
-                  from="0 50 50"
-                  to="360 50 50"
-                  repeatCount="indefinite"
-                />
-              </path>
-            </svg>
-          </div>
-        </div>
-      )}
-      <Canvas
-        camera={{ position: [0, 0.5, 5], fov: 45 }}
-        className="h-2xl w-2xl"
-      >
-        <OrbitControls enableZoom={false} />
-        <MeshComponent onLoad={handleLoad} />
-      </Canvas>
+      <Suspense fallback={<Loader />}>
+        <Canvas
+          camera={{ position: [0, 0.5, 5], fov: 45 }}
+          className="h-2xl w-2xl"
+        >
+          <OrbitControls enableZoom={false} />
+          <MeshComponent onLoad={handleLoad} />
+        </Canvas>
+      </Suspense>
     </div>
   );
 }

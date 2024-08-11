@@ -19,7 +19,7 @@ const Details = () => {
               {/* <CountUp enableScrollSpy={true} end={v.value} duration={2.5} />+ */}
               {v.value}+
             </span>
-            <span className="h-1/2 text-center text-xs font-bold lg:text-lg">
+            <span className="flex h-1/2 items-center px-2 text-center text-xs font-bold lg:text-lg">
               {v.label}
             </span>
           </div>

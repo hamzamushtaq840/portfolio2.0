@@ -1,12 +1,13 @@
 import { useGLTF, useProgress } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
-import { Mesh } from "three";
+import { AnimationMixer, Mesh } from "three";
+import { useFrame } from "@react-three/fiber";
 
 function MeshComponent({ onLoad }: { onLoad: () => void }) {
   const fileUrl = "/smol_ame_in_an_upcycled_terrarium_hololiveen/scene.gltf";
   const mesh = useRef<Mesh>(null!);
-  const { scene } = useGLTF(fileUrl);
+  const { scene, animations } = useGLTF(fileUrl); // Load animations
+  const mixer = useRef<AnimationMixer | null>(null); // Ref for AnimationMixer
 
   const { progress } = useProgress();
 
@@ -18,6 +19,14 @@ function MeshComponent({ onLoad }: { onLoad: () => void }) {
   }, [progress, onLoad]);
 
   useEffect(() => {
+    // Set up the AnimationMixer and play the animation
+    if (animations && animations.length > 0) {
+      mixer.current = new AnimationMixer(scene);
+      animations.forEach((clip) => {
+        mixer.current?.clipAction(clip).play();
+      });
+    }
+
     if (window.innerWidth > 700) {
       scene.position.y = -0.9;
     } else {
@@ -32,19 +41,14 @@ function MeshComponent({ onLoad }: { onLoad: () => void }) {
     if (mesh.current) {
       mesh.current.rotation.y = -Math.PI / 4; // Rotate slightly to the left (adjust value as needed)
     }
-  }, [scene]);
+  }, [scene, animations]);
 
-  useFrame(({ clock }) => {
+  useFrame((state, delta) => {
+    // Update the mixer on each frame
+    mixer.current?.update(delta);
+
     if (mesh.current) {
-      const elapsedTime = clock.getElapsedTime();
-      const amplitude = 0.05; // Amplitude of the oscillation
-      const frequency = 1.5; // Frequency of the oscillation
-
       mesh.current.rotation.y += 0.003;
-
-      // Apply small oscillating rotation
-      // mesh.current.position.y = Math.sin(elapsedTime * 1.5) * 0.02;
-      // mesh.current.rotation.y = Math.sin(elapsedTime * frequency) * amplitude;
     }
   });
 

@@ -30,6 +30,12 @@ export const details = [
 
 export const certifications = [
   {
+    organizationName: "AWS",
+    courseName: " AWS Fundamentals Specialization",
+    link: "https://coursera.org/verify/specialization/GP0L8DZQTGQD",
+    year: 2023,
+  },
+  {
     organizationName: "Facebook - META",
     courseName: "Advanced React",
     link: "https://coursera.org/verify/2RAZQLM32DNA",
@@ -41,12 +47,12 @@ export const certifications = [
     link: "https://www.coursera.org/verify/5UJRRR6J7DDG",
     year: 2023,
   },
-  {
-    organizationName: "Facebook - META",
-    courseName: "Developing Back-End Apps with Node and Express",
-    link: "https://www.coursera.org/verify/WFYW7QUJEWRH",
-    year: 2023,
-  },
+  // {
+  //   organizationName: "Facebook - META",
+  //   courseName: "Developing Back-End Apps with Node and Express",
+  //   link: "https://www.coursera.org/verify/WFYW7QUJEWRH",
+  //   year: 2023,
+  // },
 ];
 
 export const experiences = [

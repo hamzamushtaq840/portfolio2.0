@@ -1,5 +1,5 @@
 export const intro = {
-  title: "Full Stack Developer and Solution Architect.",
+  title: "Full Stack Developer and ML Engineer",
   heading: `Crafting seamless user experiences with cutting-edge web technologies
           and robust backend solutions.`,
   aboutMe: `Crafting seamless user experiences with cutting-edge web technologies
@@ -47,28 +47,28 @@ export const certifications = [
     link: "https://www.coursera.org/verify/5UJRRR6J7DDG",
     year: 2023,
   },
-  // {
-  //   organizationName: "Facebook - META",
-  //   courseName: "Developing Back-End Apps with Node and Express",
-  //   link: "https://www.coursera.org/verify/WFYW7QUJEWRH",
-  //   year: 2023,
-  // },
+  {
+    organizationName: "DeepLearning.AI",
+    courseName: "AI For Everyone",
+    link: "https://www.coursera.org/verify/8R6XY5MUDFWY",
+    year: 2019,
+  },
 ];
 
 export const experiences = [
   {
     organizationName: "Apimio",
-    position: "Mid-Senior Full Stack Developer",
+    position: "Machine Learning Engineer",
     timeline: "July 2023 - March 2024",
   },
   {
     organizationName: "Siffar",
-    position: "Full Stack Developer",
+    position: "Mid Software Engineer",
     timeline: "March 2020 - June 2023",
   },
   {
     organizationName: "Fiverr",
-    position: "Front End Developer",
+    position: "Frontend Developer",
     timeline: "Dec 2019 - Aug 2020",
   },
 ];
@@ -112,12 +112,17 @@ export const projects = [
 export const marqueeItems = [
   "React",
   "Next.js",
+  "Python",
   "JavaScript",
   "TypeScript",
   "Docker",
   "Kubernetes",
   "NodeJs",
   "Express",
+  "Flask",
+  "TensorFlow",
+  "Pytorch",
+  "Fast Api",
   "Web Workers",
   "Service Workers",
   "MicroServices",

@@ -16,7 +16,6 @@ export async function GET() {
 }
 
 export async function POST(req: NextRequest) {
-  await redis.set("counter", 8000);
-
-  return NextResponse.json({ count: 8000 });
+  const count = await redis.incr("counter");
+  return NextResponse.json({ count });
 }

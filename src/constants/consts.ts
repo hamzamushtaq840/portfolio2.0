@@ -9,11 +9,11 @@ export const intro = {
   cards: [
     {
       label: "BORN IN",
-      value: "Pakistan",
+      value: "Kashmir",
     },
     {
       label: "EXPERIENCE",
-      value: "4+ Years",
+      value: "5+ Years",
     },
     {
       label: "DATE OF BIRTH",
@@ -23,9 +23,9 @@ export const intro = {
 };
 
 export const details = [
-  { label: "YEARS OF EXPERIENCE", value: 4 },
-  { label: "PROJECT COMPLETED", value: 40 },
-  { label: "HAPPY CLIENTS", value: 20 },
+  { label: "YEARS OF EXPERIENCE", value: 5 },
+  { label: "PROJECT COMPLETED", value: 42 },
+  { label: "HAPPY CLIENTS", value: 24 },
 ];
 
 export const certifications = [
@@ -33,7 +33,7 @@ export const certifications = [
     organizationName: "AWS",
     courseName: " AWS Fundamentals Specialization",
     link: "https://coursera.org/verify/specialization/GP0L8DZQTGQD",
-    year: 2023,
+    year: 2024,
   },
   {
     organizationName: "Facebook - META",
@@ -57,8 +57,13 @@ export const certifications = [
 
 export const experiences = [
   {
+    organizationName: "Nitrocode",
+    position: "Senior Software Engineer",
+    timeline: "April 2024",
+  },
+  {
     organizationName: "Apimio",
-    position: "Machine Learning Engineer",
+    position: "Mid Software Engineer",
     timeline: "July 2023 - March 2024",
   },
   {
@@ -96,7 +101,7 @@ export const projects = [
     name: "99NAMESOFALLAH",
     picture: "/99namesofallah.png",
     desc: "WEBSITE FEATURING 99 NAMES OF ALLAH",
-    live: "https://99-names-of-allah.vercel.app",
+    live: "https://99namesofallah.faith",
     codebase: "https://github.com/hamzamushtaq840/99-names-of-Allah",
   },
   {
@@ -110,8 +115,8 @@ export const projects = [
 ];
 
 export const marqueeItems = [
-  "React",
   "Next.js",
+  "React",
   "Python",
   "JavaScript",
   "TypeScript",
@@ -119,13 +124,13 @@ export const marqueeItems = [
   "Kubernetes",
   "NodeJs",
   "Express",
-  "Flask",
   "TensorFlow",
-  "Pytorch",
-  "Fast Api",
   "Web Workers",
   "Service Workers",
-  "MicroServices",
+  "Micro Services",
   "WebRTC",
-  "Version Control",
+  "GraphQL",
+  "Sentry",
+  "Cron",
+  "Stripe",
 ];

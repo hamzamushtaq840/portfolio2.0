@@ -21,12 +21,15 @@ const Certifications = () => {
       <span className="mb-16 mt-3 text-center font-medium leading-[32px] tracking-widest">
         REGONITIONS & ACCOIMPLISHMENTS
       </span>
-      <div className="z-[20] flex w-full flex-col gap-6">
+      <div className="z-[20] flex w-full flex-col gap-6 pb-2">
         {certifications.map((v, i) => {
           return (
-            <div
+            <a
+              href={v.link}
+              target="_blank"
+              rel="noopener noreferrer"
               key={i}
-              className="flex flex-col items-center gap-6 border border-white px-8 py-9 lg:flex-row"
+              className="flex flex-col items-center gap-6 border border-white px-8 py-9 transition-all duration-300 hover:scale-105 hover:border-textOrange lg:flex-row"
             >
               <div className="flex h-12 w-12 items-center justify-center bg-textOrange text-lg font-bold text-white">
                 {i + 1}
@@ -44,7 +47,7 @@ const Certifications = () => {
                   {v.year}
                 </span>
               </div>
-            </div>
+            </a>
           );
         })}
       </div>

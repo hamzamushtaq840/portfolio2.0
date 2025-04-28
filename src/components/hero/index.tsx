@@ -19,7 +19,7 @@ const Hero = () => {
           <span>DEVELOPER</span>
         </div>
         <h1>
-          BASED IN <s>PAKISTAN</s>
+          BASED IN <s>KASHMIR</s>
         </h1>
         <span className="mb-14 mt-10 flex flex-wrap justify-center gap-2 text-lg lg:mb-14 lg:justify-start lg:text-2xl">
           <span>DESIGN</span>

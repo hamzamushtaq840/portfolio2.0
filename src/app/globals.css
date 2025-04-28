@@ -43,7 +43,7 @@ html {
   justify-content: space-between;
   align-items: center;
   gap: var(--gap);
-  animation: scroll 25s linear infinite;
+  animation: scroll 45s linear infinite;
 }
 
 .stock-ticker:hover ul {

@@ -12,7 +12,7 @@ function Loader() {
           style={{ width: progressBarWidth }}
         />
       </div>
-      <span className="mt-2 text-white"> Loading 3D model {progress}%</span>
+      <span className="mt-2 text-white"> LOADING 3D MODEL {progress}%</span>
     </div>
   );
 }

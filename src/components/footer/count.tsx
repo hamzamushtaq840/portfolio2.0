@@ -13,8 +13,7 @@ const Count = () => {
       try {
         const response = await fetch("/api/counter");
         const data = await response.json();
-        console.log(data);
-        setCount(data);
+        setCount(data.count);
       } catch (error) {}
     };
 
